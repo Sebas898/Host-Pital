@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # models
     'core.apps.CoreConfig',
+    'mediosInternos.apps.MediosInternosConfig',
 ]
 
 MIDDLEWARE = [
