@@ -8,5 +8,11 @@ class Cita(models.Model):
     fecha = models.DateField(blank = False, null = False)
     duracion = models.PositiveIntegerField()
     
+    def get_cliente_info(self):
+        return f'({self.cliente.id}) {self.cliente.nombre} {self.cliente.apellido}'
+
+    def get_doctor_info(self):
+        return f'({self.doctor.id}) {self.doctor.nombre} {self.doctor.apellido}'
+    
 class Especialidad(models.Model):
     nombreEsp = models.CharField(max_length = 48, blank = False, null = False)
