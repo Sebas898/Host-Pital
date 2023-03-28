@@ -1,5 +1,5 @@
 from django.db import models
-from core.models import Cliente, Doctor
+from Apps.core.models import Cliente, Doctor
 
 # Create your models here.
 class Cita(models.Model):

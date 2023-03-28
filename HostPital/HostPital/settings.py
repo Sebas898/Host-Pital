@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # models
-    'core.apps.CoreConfig',
-    'mediosInternos.apps.MediosInternosConfig',
+    'Apps.core',
+    'Apps.mediosInternos',
 ]
 
 MIDDLEWARE = [
