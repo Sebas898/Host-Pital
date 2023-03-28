@@ -1,9 +1,15 @@
 from django.db import models
-from django.contrib.auth.models import User
 
 # Create your models here.
 class DatosUsuario(models.Model):
-    tipoUsuario = models.OneToOneField(User, on_delete=models.CASCADE)
+    
+    tUser = (
+        ('doctor', 'Doctor'),
+        ('enfermero', 'Enfermero'),
+        ('cliente', 'Cliente'),
+    )
+    
+    tipoUsuario = models.CharField(max_length = 10, blank = False, null = False, choices = tUser)
     numeroDocumento = models.CharField(max_length = 58, blank = False, null = False)
     nombre = models.CharField(max_length = 48, blank = False, null = False)
     apellido = models.CharField(max_length = 48, blank = False, null = False)
