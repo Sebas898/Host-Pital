@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # models
     'Apps.core',
     'Apps.mediosInternos',
+    'Apps.docEspecializado',
 ]
 
 MIDDLEWARE = [
