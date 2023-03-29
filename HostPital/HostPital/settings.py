@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'HostPital.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'H_Pital.db',
+        'NAME': BASE_DIR / 'HostPital.db',
     }
 }
 
