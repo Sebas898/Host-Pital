@@ -4,7 +4,7 @@ from .models import Cita, Especialidad
 # Register your models here.
 @admin.register(Cita)
 class citaAd(admin.ModelAdmin):
-    list_display = ('id','get_cliente_info', 'get_doctor_info', 'fecha', 'duracion')
+    list_display = ('id','cliente_info', 'doctor_info', 'fecha', 'duracion')
 
 @admin.register(Especialidad)
 class especialidadAd(admin.ModelAdmin):
