@@ -22,25 +22,8 @@ class DatosUsuario(models.Model):
 class Doctor(DatosUsuario):
     disponible = models.BooleanField()
     
-# -------------------------------------
-# class Especialidad(models.Model):
-#     nombreEsp = models.CharField(max_length = 48, blank = False, null = False)
-
-# class DoctorEspecialista(models.Model):
-#     doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
-#     especialidad = models.ForeignKey(Especialidad, on_delete = models.CASCADE)
-# ------------------------------------
-
 class Enfermero(DatosUsuario):
     activo = models.BooleanField()
     
 class Cliente(DatosUsuario):
     activo = models.BooleanField()
-
-# ------------------------------------
-# class Cita(models.Model):
-#     cliente = models.ForeignKey(Cliente, on_delete = models.CASCADE)
-#     doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
-#     fecha = models.DateField(blank = False, null = False)
-#     duracion = models.PositiveIntegerField()
-# ------------------------------------
